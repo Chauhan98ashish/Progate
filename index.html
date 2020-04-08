@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEB PAGE</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="nav-bar clearfix">
+                    <img src="images/logo.png" class="logo">
+                    <ul class="main-nav animated slideInDown" id="check-class">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="https://www.w3schools.com/html/">HTML</a></li>
+                        <li><a href="https://www.w3schools.com/css/">CSS</a></li>
+                        <li><a href="https://www.w3schools.com/js/">JavaScript</a></li>
+                        <li><a href="https://www.w3schools.com/bootstrap/bootstrap_ver.asp">BootStrap</a></li>
+                    </ul>
+                    <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+                </div>
+            </nav>
+            <div class="main-content">
+                <h1>WELCOME TO <span class="colorchange">EXPLORE ZONE</span>.<br>
+                BEGIN TO LEARN THE WEB DEVELOPMENT TODAY WITH US.</h1>
+                <a href="https://www.w3schools.com/" title="Redirect to w3School" class="btn btn-full">Click to continue</a>
+                <a href="calc.html" class="btn btn-nav">Calculator</a>
+                <a href="about.html" class="btn btn-nav1">About Us</a>
+            </div>
+        </header>
+        <script text="text/javascript">
+            function slideshow(){
+                var x= document.getElementById('check-class');
+                if(x.style.display === "none"){
+                    x.style.display="block";
+                }
+                else{
+                    x.style.display="none";
+                }
+            }
+        </script>
+    </body>
+</html>
